@@ -1,0 +1,287 @@
+/* CSS Reset  */
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* CSS Variables  */
+:root {
+    --navbar-height: 130px;
+}
+
+/* Navigation Bar  */
+
+#navbar {
+    position: relative;
+    display: flex;
+    align-items: center;
+    top: 0px;
+    justify-content: center;
+}
+
+/* #logo {
+    margin: 12px 20px;
+} */
+#logo img {
+    margin: 10px 20px;
+    height: 75px;
+    width: 75px;
+}
+
+#navbar::before {
+    content: "";
+    background-color: #787676;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 90%;
+    top: 0px;
+    width: 100%;
+    opacity: 0.25;
+    z-index: -1;
+}
+
+/* Navigation List Styling  */
+#navbar ul {
+    display: flex;
+    font-family: 'Kanit', sans-serif;
+    /* background-color: black; */
+    /* margin: 5px;
+    padding: 5px; */
+}
+
+#navbar ul li {
+    /* color: white;
+    background-color: black; */
+    list-style: none;
+    font-size: 1.6rem;
+
+}
+
+#navbar ul li a {
+    color: black;
+    display: block;
+    text-decoration: none;
+    border-radius: 15px;
+    margin: 2px 85px;
+    padding: 15px;
+    font-weight: bold;
+}
+
+#navbar ul li a:hover {
+    /* color: black; */
+    /* background-color:#c4721f; */
+    border: 2px solid;
+    /* padding: 10px; */
+    /* font-size: 1.5rem; */
+}
+
+/* Home Section  */
+
+#home {
+    display: flex;
+    flex-direction: column;
+    height: 210px;
+    padding: 20px 200px;
+    justify-content: center;
+    align-items: center;
+    /* line-height: 1.75em; */
+}
+
+#home::before {
+    content: "";
+    background: url(../pasta.jpg) no-repeat center center/cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 55%;
+    width: 100%;
+    opacity: 0.55;
+    z-index: -1;
+}
+
+#home h1 {
+    color: black;
+    text-align: center;
+}
+
+#home p {
+    color: black;
+    text-align: center;
+    font-size: 1.35rem;
+    /* font-style: italic; */
+    font-family: 'PT Serif', serif;
+}
+
+
+/* Services Section Styling  */
+
+#services {
+    display: flex;
+    margin: 10px;
+}
+
+/* #services-container{
+    margin: 50px 0px;
+} */
+
+#services .box {
+    border: 2px solid brown;
+    /* width: 400px;
+    height: 350px; */
+    /* display: block; */
+    margin: 10px 10px;
+    padding: 12px;
+    border-radius: 13px;
+    background-color: rgb(235 247 247);
+    /* justify-content: center;
+    align-items: center; */
+
+}
+
+#services img {
+    padding: 5px;
+    display: block;
+    margin: auto;
+    width: 145px;
+    height: 115px;
+}
+
+#services-container h1 {
+    font-family: 'Qwitcher Grypen', cursive;
+    font-size: 4.8rem;
+    margin: 30px 15px 0px 15px;
+    padding: 0px;
+}
+
+#services .box p {
+    font-family: 'PT Serif', serif;
+}
+
+/* Clients Section  */
+
+#client-section {
+    position: relative;
+    /* height: 275px; */
+
+}
+
+#client-section h1 {
+    font-family: "Qwitcher Grypen", cursive;
+    font-size: 4.8rem;
+    margin: 15px;
+}
+
+#client-section::before {
+    content: "";
+    position: absolute;
+    background: url(../fruitsbg.jpg) no-repeat center center/cover;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.3;
+
+}
+
+#clients {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.client-item {
+    padding: 15px;
+}
+
+#clients img {
+    height: 110px;
+
+}
+
+/* Contact Section Styling */
+#contact-section {
+    position: relative;
+}
+
+#contact-section h1 {
+    font-family: "Qwitcher Grypen", cursive;
+    font-size: 4.8rem;
+    margin: 15px;
+}
+
+#contact-section::before {
+    content: "";
+    position: absolute;
+    background: url(../contact.jpg) no-repeat center center/cover;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+
+}
+
+#contact-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+
+#contact-box input,
+#contact-box textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 0.8rem;
+}
+
+#contact-box form {
+    width: 40%;
+}
+
+#contact-box label {
+    font-size: 1.3rem;
+    font-family: 'Lato', sans-serif;
+
+}
+
+
+footer {
+    background: black;
+    color: white;
+    padding: 9px 20px;
+}
+
+
+/* Utility Classes  */
+.heading-primary {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 2.5rem;
+    padding: 12px;
+}
+
+.heading-secondary {
+    font-family: 'Lato', sans-serif;
+    font-size: 2.25rem;
+    padding: 12px;
+}
+
+.btn {
+    padding: 4px 15px;
+    border: 2px solid white;
+    background-color: bisque;
+    /* color: white; */
+    margin: 15px 15px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.center {
+    text-align: center;
+}
